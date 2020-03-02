@@ -6373,6 +6373,7 @@ add list=dpbr-CT address=103.147.198.0/23
 add list=dpbr-CT address=103.147.206.0/23
 add list=dpbr-CT address=103.147.211.0/24
 add list=dpbr-CT address=103.148.174.0/23
+add list=dpbr-CT address=103.149.6.0/23
 add list=dpbr-CT address=103.192.8.0/22
 add list=dpbr-CT address=103.192.12.0/22
 add list=dpbr-CT address=103.192.16.0/22
