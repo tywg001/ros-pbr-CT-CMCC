@@ -674,7 +674,9 @@ add dst-address=114.113.144.0/20 action=lookup table=CT
 add dst-address=114.113.224.0/20 action=lookup table=CT
 add dst-address=114.113.250.0/24 action=lookup table=CT
 add dst-address=114.114.112.0/21 action=lookup table=CT
-add dst-address=114.115.0.0/16 action=lookup table=CT
+add dst-address=114.115.0.0/17 action=lookup table=CT
+add dst-address=114.115.128.0/18 action=lookup table=CT
+add dst-address=114.115.224.0/19 action=lookup table=CT
 add dst-address=114.116.0.0/17 action=lookup table=CT
 add dst-address=114.116.128.0/18 action=lookup table=CT
 add dst-address=114.116.192.0/19 action=lookup table=CT

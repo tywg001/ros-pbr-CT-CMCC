@@ -674,7 +674,9 @@ add list=dpbr-CT address=114.113.144.0/20
 add list=dpbr-CT address=114.113.224.0/20
 add list=dpbr-CT address=114.113.250.0/24
 add list=dpbr-CT address=114.114.112.0/21
-add list=dpbr-CT address=114.115.0.0/16
+add list=dpbr-CT address=114.115.0.0/17
+add list=dpbr-CT address=114.115.128.0/18
+add list=dpbr-CT address=114.115.224.0/19
 add list=dpbr-CT address=114.116.0.0/17
 add list=dpbr-CT address=114.116.128.0/18
 add list=dpbr-CT address=114.116.192.0/19
