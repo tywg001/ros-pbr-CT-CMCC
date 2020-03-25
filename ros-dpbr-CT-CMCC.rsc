@@ -1793,7 +1793,7 @@ add list=dpbr-CMCC address=101.38.0.0/16
 add list=dpbr-CMCC address=101.41.0.0/16
 add list=dpbr-CMCC address=101.49.128.0/20
 add list=dpbr-CMCC address=101.49.144.0/22
-add list=dpbr-CMCC address=101.52.240.0/22
+add list=dpbr-CMCC address=101.52.240.0/21
 add list=dpbr-CMCC address=101.52.252.0/22
 add list=dpbr-CMCC address=101.64.0.0/13
 add list=dpbr-CMCC address=101.72.0.0/14
