@@ -2793,7 +2793,6 @@ add list=dpbr-CMCC address=220.197.160.0/19
 add list=dpbr-CMCC address=220.197.192.0/18
 add list=dpbr-CMCC address=220.198.0.0/15
 add list=dpbr-CMCC address=220.200.0.0/17
-add list=dpbr-CMCC address=220.200.128.0/20
 add list=dpbr-CMCC address=220.200.148.0/22
 add list=dpbr-CMCC address=220.200.152.0/21
 add list=dpbr-CMCC address=220.200.160.0/19
