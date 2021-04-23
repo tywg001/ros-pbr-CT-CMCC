@@ -15,13 +15,8 @@ ros script 例子
 /file remove [find name="ros-pbr-CT-UN-CM.rsc"]
 /ip route rule remove [find table=main]
 /ip route rule remove [find table=CT]
+/ip route rule remove [find table=UN]
 /ip route rule remove [find table=CM]
-/ip route rule remove [find table=CT2]
-/ip route rule remove [find table=CT3]
-/ip route rule add src-address=10.0.0.14/32 action=lookup table=main
-/ip route rule add src-address=10.0.101.2/32 action=lookup table=CT2
-/ip route rule add src-address=10.0.102.2/32 action=lookup table=CT3
-/ip route rule add src-address=10.0.2.2/32 action=lookup table=CMCC
 /tool fetch url="https://raw.githubusercontent.com/jacyl4/ros-pbr-CT-CMCC/master/ros-pbr-CT-UN-CM.rsc"
 /import ros-pbr-CT-UN-CM.rsc
 ```
