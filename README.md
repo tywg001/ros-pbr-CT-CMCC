@@ -17,7 +17,7 @@ ros script 例子
 /ip route rule remove [find table=CT]
 /ip route rule remove [find table=UN]
 /ip route rule remove [find table=CM]
-/tool fetch url="https://raw.githubusercontent.com/jacyl4/ros-pbr-CT-CMCC/master/ros-pbr-CT-UN-CM.rsc"
+/tool fetch url="https://github.com/tywg001/ros-pbr-CT-CMCC/blob/master/ros-pbr-CT-CMCC.rsc"
 /import ros-pbr-CT-UN-CM.rsc
 ```
 
