@@ -14,8 +14,7 @@ for net in $nets ; do
 done
 
 
-} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-pbr-CN.rsc 
-
+} > ../ros-pbr-CT-UN-CM.rsc
 
 {
 echo "/ip firewall address-list"
@@ -26,6 +25,6 @@ for net in $nets ; do
 done
 
 
-} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-dpbr-CN.rsc 
+} > ../ros-pbr-CT-UN-CM.rsc
 
 rm -rf /tmp/pbr
