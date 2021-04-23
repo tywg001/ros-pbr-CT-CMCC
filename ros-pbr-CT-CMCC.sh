@@ -25,17 +25,17 @@ done
 
 nets=`cat /tmp/pbr/cnc.txt`
 for net in $nets ; do
-  echo "add dst-address=$net action=lookup table=CT"
+  echo "add dst-address=$net action=lookup table=UN"
 done
 
 nets=`cat /tmp/pbr/cmcc.txt`
 for net in $nets ; do
-  echo "add dst-address=$net action=lookup table=CMCC"
+  echo "add dst-address=$net action=lookup table=CM"
 done
 
 nets=`cat /tmp/pbr/crtc.txt`
 for net in $nets ; do
-  echo "add dst-address=$net action=lookup table=CT"
+  echo "add dst-address=$net action=lookup table=CM"
 done
 
 nets=`cat /tmp/pbr/cernet.txt`
@@ -47,7 +47,7 @@ nets=`cat /tmp/pbr/cstnet.txt`
 for net in $nets ; do
   echo "add dst-address=$net action=lookup table=CT"
 done
-} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-pbr-CT-CMCC.rsc 
+} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-pbr-CT-UN-CM.rsc 
 
 
 {
@@ -55,33 +55,33 @@ echo "/ip firewall address-list"
 
 nets=`cat /tmp/pbr/ct.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CT address=$net"
+  echo "add list=CT address=$net"
 done
 
 nets=`cat /tmp/pbr/cnc.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CMCC address=$net"
+  echo "add list=UN address=$net"
 done
 
 nets=`cat /tmp/pbr/cmcc.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CMCC address=$net"
+  echo "add list=CM address=$net"
 done
 
 nets=`cat /tmp/pbr/crtc.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CMCC address=$net"
+  echo "add list=CM address=$net"
 done
 
 nets=`cat /tmp/pbr/cernet.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CT address=$net"
+  echo "add list=CT address=$net"
 done
 
 nets=`cat /tmp/pbr/cstnet.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CT address=$net"
+  echo "add list=CT address=$net"
 done
-} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-dpbr-CT-CMCC.rsc 
+} > /var/www/html/nextcloud/data/jacyl4/files/github/ros-pbr-CT-CMCC/ros-dpbr-CT-UN-CM.rsc 
 
 rm -rf /tmp/pbr
